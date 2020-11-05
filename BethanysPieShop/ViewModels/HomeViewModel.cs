@@ -8,6 +8,10 @@ namespace BethanysPieShop.ViewModels
 {
     public class HomeViewModel
     {
+        public HomeViewModel()
+        {
+
+        }
         public HomeViewModel(IEnumerable<Pie> piesOfTheWeek)
         {
             PiesOfTheWeek = piesOfTheWeek;
