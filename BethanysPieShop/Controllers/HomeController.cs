@@ -22,7 +22,10 @@ namespace BethanysPieShop.Controllers
 
         public IActionResult Index()
         {
-            var homeViewModel = new HomeViewModel(_pieRepository.PiesOfTheWeek);
+            var homeViewModel = new HomeViewModel
+            {
+                PiesOfTheWeek = _pieRepository.PiesOfTheWeek
+            };
             
 
             return View(homeViewModel);
